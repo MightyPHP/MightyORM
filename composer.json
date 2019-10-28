@@ -1,0 +1,21 @@
+{
+    "name": "mightyphp/mightyorm",
+    "type": "framework",
+    "description": "The ORM for MightyPHP Framework",
+    "keywords": ["php","php-framework", "mvc", "framework", "orm"],
+    "homepage": "https://mightyphp.github.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Desmond Chin Chung Choon",
+            "email": "desmond@desmondchin.xyz",
+            "homepage": "https://desmondchin.xyz",
+            "role": "Developer"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+            "MightyORM\\": "src/"
+        }
+    }
+}
