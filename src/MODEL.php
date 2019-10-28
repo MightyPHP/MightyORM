@@ -7,6 +7,8 @@ class MODEL {
     protected $table = '';
     protected $connection = '';
 
+    private $__db = null;
+
     public function __construct() {
 
         /**
@@ -23,6 +25,11 @@ class MODEL {
             $this->connection = 'default';
         }
 
-        DB\Connect($this->connection);
+        /**
+         * Initiates DB connection
+         */
+        $this->__db = new MYSQL\DB($this->connection);
+
+        MYSQL\DB::describe($this->table, $this);
     }
 }

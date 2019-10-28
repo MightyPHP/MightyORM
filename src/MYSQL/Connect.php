@@ -1,6 +1,7 @@
 <?php
 
-namespace MightyORM\DB;
+namespace MightyORM\MYSQL;
+use PDO;
 
 class Connect{
     public function __construct($db) {
