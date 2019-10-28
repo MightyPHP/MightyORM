@@ -15,7 +15,8 @@
     ],
 	"autoload": {
         "psr-4": {
-            "MightyORM\\": "src/"
+            "MightyORM\\": "src/",
+            "MightyORM\\DB\\": "src/DB/"
         }
     }
 }
